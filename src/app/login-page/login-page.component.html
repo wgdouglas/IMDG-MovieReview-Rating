@@ -1,0 +1,29 @@
+<div class="login-container">
+    <img class="film" 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8djJEuEAGOBRdrxYwU_DZ_U4f3IF8z8Qh2g&usqp=CAU">
+    <div class="logo">DMDG Movies</div>
+         <div class="description">
+        DMDG is an online database of information related to films, 
+        television series, podcasts, home videos, video games, 
+        and streaming content online – including cast, production 
+        crew and personal biographies, plot summaries, trivia, ratings,
+        and fan and critical reviews.
+    </div>
+
+    <div class="login-form">
+        <div class="login-form-group">
+            <label for="ursername">Username: </label>
+            <input type="text" name="ursername" [(ngModel)]="username">
+        </div>
+        <div class="login-form-group">
+            <label for="password">Password: </label>
+            <input type="text" name="password" [(ngModel)]="password">
+        </div>
+        <div class="button-container">
+            <div class="error">{{errorMsg}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+
+</div>
+<!-- DMDG means douglas.... -->
